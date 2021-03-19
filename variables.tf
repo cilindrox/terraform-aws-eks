@@ -27,6 +27,12 @@ variable "cluster_security_group_id" {
   default     = ""
 }
 
+variable "cluster_security_group_description" {
+  default     = "EKS cluster security group."
+  description = "Description for the security group attached to the EKS cluster"
+  type        = string
+}
+
 variable "cluster_version" {
   description = "Kubernetes version to use for the EKS cluster."
   type        = string
